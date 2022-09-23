@@ -1,0 +1,39 @@
+.category .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:1.5rem;
+    align-items: flex-start;
+ }
+ 
+ .category .box-container .box{
+    border:var(--border);
+    padding:2rem;
+    text-align: center;
+ }
+ 
+ .category .box-container .box img{
+    width: 250px;
+    height: 220px;
+ }
+ 
+ .category .box-container .box h3{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color:var(--black);
+    color: white;
+ }
+ 
+ .category .box-container .box:hover{
+    background-color: var(--black);
+ }
+ 
+ .category .box-container .box:hover img{
+   
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+ }
+ 
+ .category .box-container .box:hover h3{
+    color:white;
+ }

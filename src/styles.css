@@ -1,1 +1,256 @@
-/* You can add global styles to this file, and also import other style files */
+
+*{
+    
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+	background: #1D1D1F;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+nav{
+background: rgb(0, 0, 0);
+height: 80px;
+width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 0px 40px;
+}
+.logo{
+    height: 90px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background:  rgb(131, 0, 0);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+@media(max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    body {
+		padding: 90px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+        height: 100%;
+	}
+
+
+
+    .home .slide{
+        display: center;
+        flex-wrap: wrap-reverse;
+        gap:1.5rem;
+        align-items: center;
+        margin-bottom: 1rem;
+     }
+     
+     .home .slide .content{
+        flex:1 1 10em;
+        text-align: center;
+     }
+     
+     .home .slide .image{
+        width: 100%;
+        height: 250px;
+     }
+     
+     .home .slide .image img{
+        width: 100%;
+        height: 250px;
+     }
+     
+     .home .slide .content span{
+        font-size: 20px;
+        color:var(--light-color);
+     }
+     
+     .home .slide .content h3{
+        font-size: 15px;
+        text-transform: capitalize;
+        color:var(--black);
+        padding:1rem 0;
+     }
+     
+     .swiper-pagination-bullet-active{
+        background-color: var(--yellow);
+     }
+}
+@media(max-width: 802px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(36, 36, 36);
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+    /*Estilos para hacer responsive el slider*/
+    .home .slide{
+        display: center;
+        flex-wrap: wrap-reverse;
+        gap:1.5rem;
+        align-items: center;
+        margin-bottom: 1rem;
+     }
+     
+     .home .slide .content{
+        flex:1 1 5em;
+        text-align: center;
+     }
+     
+     .home .slide .image{
+        width: 100%;
+        height: 250px;
+     }
+     
+     .home .slide .image img{
+        width: 100%;
+        height: 250px;
+     }
+     
+     .home .slide .content span{
+        font-size: 20px;
+        color:var(--light-color);
+     }
+     
+     .home .slide .content h3{
+        font-size: 15px;
+        text-transform: capitalize;
+        color:var(--black);
+        padding:1rem 0;
+     }
+     
+     .swiper-pagination-bullet-active{
+        background-color: var(--yellow);
+     }
+}
+
+
+/* Estilos para el contenido principal de la pagina*/
+.contenedor {
+	max-width: 1300px;
+	width: 90%;
+	margin: auto;
+  
+}
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+    min-height: 100vh;
+	margin-bottom: 100px;
+	display: inline-flex;
+	align-items: center;
+    text-align: center;
+}
+
+.contenido-principal__imagen {
+    margin: 5px;
+	vertical-align: top;
+	margin-right: 50px;
+	width: 50%;
+	max-width: 550px;
+    padding: 5px;
+}
+
+.contenido-principal__contenedor {
+	width: 100%;
+}
+
+.contenido-principal__titulo {
+    margin: 10px;
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+    margin: 15px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: #ffffff;
+    font-size: 16px;
+    padding-right: 2em;
+    display: inline-flex;
+    text-align: center;
+    
+}
+
