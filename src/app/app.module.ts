@@ -6,6 +6,7 @@ import { ConocemeComponent } from './componets/conoceme/conoceme.component';
 import { RedesComponent } from './componets/redes/redes.component';
 import { ConocimientosComponent } from './componets/conocimientos/conocimientos.component';
 import { NombresComponent } from './componets/nombres/nombres.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NombresComponent } from './componets/nombres/nombres.component';
     NombresComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

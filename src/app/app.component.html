@@ -1,20 +1,20 @@
 <header>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <a href="index.html" class="enlace">
-            <img src="images/Logo2.png" alt="" class="logo">
-        </a>
-        <ul>
-            <li><a class="active" href="">Inicio</a></li>
-            <li><a href="pages/conoceme.html">Conoceme</a></li>
-            <li><a href="pages/habilidades.html">Habilidades</a></li>
-            <li><a href="pages/Pasatiempos.html">Intereses</a></li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <a href="index.html" class="enlace">
+      <img src="images/Logo2.png" alt="" class="logo">
+    </a>
+    <ul>
+      <li><a class="active" href="">Inicio</a></li>
+      <li><a href="pages/conoceme.html">Conoceme</a></li>
+      <li><a href="pages/habilidades.html">Habilidades</a></li>
+      <li><a href="pages/Pasatiempos.html">Intereses</a></li>
+      <li><a href="pages/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
 
 <app-conoceme></app-conoceme>
@@ -24,3 +24,15 @@
 <hr>
 <h2 class="listado">Entregable de Listado de Alumnos</h2>
 <app-nombres></app-nombres>
+<br>
+<br>
+<hr>
+<div class="container">
+  <form [formGroup]="miFormulario">
+    usuario: <input type="text" class="form-control" formControlName="username">
+    Password: <input type="password" class="form-control" formControlName="userpassword"><br>
+    <button type="submit">Enviar</button>
+
+  </form>
+  {{miFormulario.value | json}}
+</div>
