@@ -7,6 +7,10 @@ import { RedesComponent } from './componets/redes/redes.component';
 import { ConocimientosComponent } from './componets/conocimientos/conocimientos.component';
 import { NombresComponent } from './componets/nombres/nombres.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TablesComponent } from './componets/tables/tables.component';
+import { CardsComponent } from './componets/cards/cards.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.modules';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     ConocemeComponent,
     RedesComponent,
     ConocimientosComponent,
-    NombresComponent
+    NombresComponent,
+    TablesComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
